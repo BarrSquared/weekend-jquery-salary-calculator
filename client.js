@@ -4,7 +4,9 @@ let totalMonthly = 0;
 function readyNow(){
     console.log('DOM Ready');
     $('#submit-button').on('click', submit);
-    $('#delete-button').on('click', deleteRow);
+    $('.delete-button').on('click', deleteRow);
+    //call to check salary
+    $('.submit').on('function', salaryWarning);
 
 } // end readyNow function
 
@@ -12,10 +14,21 @@ function deleteRow(){
     console.log('in delete row');
 }
 
+function salaryWarning(){
+    //css color for monthly cost >20k
+    if(totalMonthly > 20000){
+    //applying color
+    // $('#totalMonthlyBox').empty();
+    $('#totalMonthlyBox').replaceWith(`
+    <div class="warning">Total Monthly: ${totalMonthly}</div>
+    `);
+    }
+}
+
 function submit(){
     // setting the val to whats input on dom
     let firstName = $('#firstName').val(); 
-    let lastName = $('lastName').val();
+    let lastName = $('#lastName').val();
     let id = $('#id').val();
     let title = $('#title').val();
     let annualSalary = $('#annualSalary').val();
@@ -28,7 +41,7 @@ function submit(){
         <td>${id}</td>
         <td>${title}</td>
         <td>${annualSalary}</td>
-        <td><button id="delete-button">Delete</button></td>
+        <td><button class="delete-button">Delete</button></td>
     </tr>
     `);
     //total monthly input and update to DOM
