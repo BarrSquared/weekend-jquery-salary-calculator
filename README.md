@@ -10,10 +10,10 @@ Your project description goes here. What problem did you solve? How did you solv
 - [X] Build a template in HTML (inputs / table)
 - [ ] Add style to the table
 - [X] Button click that logs to the console.
-- [ ] Assign input to variables
-- [ ] Append to the DOM using those variables
-- [ ] Create global variables for monthly cost
-- [ ] Append monthly cost to the DOM
+- [X] Assign input to variables
+- [X] Append to the DOM using those variables
+- [X] Create global variables for monthly cost
+- [X] Append monthly cost to the DOM
 - [ ] Logic for background color on the monthly costs
 - [ ] Delete button that removes a row 
 
