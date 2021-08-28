@@ -12,22 +12,14 @@
 <body>
     <h1>Salary Calculator</h1>
     <h2>Add Employee</h2>
-    <div id="addEmployeeField">
-        <div>
-            <div class="input boxes">
-                <input type="text" id="firstName" placeholder="First Name" />
-                <input type="text" id="lastName" placeholder="Last Name" />
-                <input type="text" id="id" placeholder="ID" />
-                <input type="text" id="title" placeholder="Title" />
-                <input type="text" id="annualSalary" placeholder="Annual Salary" />
-            <!-- </div> -->
-                <div class="subButton">
-                    <button id="submit-button">Submit</button>
-                </div>
-            <!-- <div> -->
-            </div>
-        </div>
+    <div class="input boxes">
+        <input type="text" id="firstName" placeholder="First Name" />
+        <input type="text" id="lastName" placeholder="Last Name" />
+        <input type="text" id="id" placeholder="ID" />
+        <input type="text" id="title" placeholder="Title" />
+        <input type="text" id="annualSalary" placeholder="Annual Salary" />
     </div>
+    <button id="submit-button">Submit</button>
     <table>
         <thead>
             <tr>
@@ -47,15 +39,15 @@
                 <td>ID</td>
                 <td>Title</td>
                 <td>Annual Salary</td>
-                <td><button id="delete-button">Delete</button></td>
+                <td><button>Delete</button></td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td class="footerRow"> </td>
+            </tr>
+        </tfoot>
     </table>
-    <div id="bRowAndTotal">
-        <div class="bottomRow">
-            <ul> </ul>
-        </div>
-        <div class="totalMonthly">Total Monthly: </div>
-    </div>
+    <div class="totalMonthly">Total Monthly: </div>
 </body>
 </html>

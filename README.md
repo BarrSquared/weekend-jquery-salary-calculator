@@ -9,7 +9,7 @@ Your project description goes here. What problem did you solve? How did you solv
 - [X] HTML, client.js, jquery.js, test log for jquery "DOM ready"
 - [X] Build a template in HTML (inputs / table)
 - [ ] Add style to the table
-- [ ] Button click that logs to the console.
+- [X] Button click that logs to the console.
 - [ ] Assign input to variables
 - [ ] Append to the DOM using those variables
 - [ ] Create global variables for monthly cost

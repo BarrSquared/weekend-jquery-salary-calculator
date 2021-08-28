@@ -1,13 +1,39 @@
-table, th, tr, td {
+table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
 }
 
 th {
     background-color: rgb(158, 158, 158)
 }
 
-.footerRow {
-    background-color: rgb(212, 212, 212);
+bRowAndTotal {
+    width: 438;
+}
 
+.bottomRow {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+    background-color: rgb(212, 212, 212);
+}
+
+h1 {
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(158, 158, 158)
+}
+
+addEmployeeField {
+    width: 600px;
+}
+
+.subButton {
+
+    text-align: right;
+    padding: 10px;
+    
 }
