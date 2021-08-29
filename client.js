@@ -3,14 +3,16 @@ $(document).ready(readyNow);
 let totalMonthly = 0;
 function readyNow(){
     console.log('DOM Ready');
+    // $('#employeeTable').empty();
     $('#submit-button').on('click', submit);
-    $('.delete-button').on('click', deleteRow);
     //call to check salary
     $('.submit').on('function', salaryWarning);
+    $('.delete-button').on('click', deleteRow);
 
 } // end readyNow function
 
 function deleteRow(){
+    $(this).parent();
     console.log('in delete row');
 }
 
