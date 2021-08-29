@@ -6,7 +6,8 @@ function readyNow(){
     // $('#employeeTable').empty();
     $('#submit-button').on('click', submit);
     //call to check salary
-    $('.submit').on('function', salaryWarning);
+    // $('.submit').on('', salaryWarning);
+    $('.submit')
     $('.delete-button').on('click', deleteRow);
 } // end readyNow function
 
@@ -17,16 +18,6 @@ function deleteRow(){
     tableRow.removeClass('.delete-button');
 }
 
-function salaryWarning(){
-    //css color for monthly cost >20k
-    if(totalMonthly > 20000){
-    //applying color
-    // $('#totalMonthlyBox').empty();
-    $('#totalMonthlyBox').replaceWith(`
-    <div class="warning">Total Monthly: ${totalMonthly}</div>
-    `);
-    }
-}
 
 function submit(){
     // setting the val to whats input on dom
@@ -50,7 +41,14 @@ function submit(){
     //total monthly input and update to DOM
     totalMonthly +=  parseInt(monthlySalary);
     $('#totalMonthly').text(`${totalMonthly}`);
-
+    //css color for monthly cost >20k
+    if(totalMonthly > 20000){
+     //applying color
+     // $('#totalMonthlyBox').empty();
+     $('#totalMonthlyBox').replaceWith(`
+     <div class="warning">Total Monthly: ${totalMonthly}</div>
+     `);
+    }
     console.log('in submit button, test input', firstName);
 }// end submit function
 
