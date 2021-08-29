@@ -2,7 +2,7 @@
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This project is a an employee salary calculator. It takes in 5 fiels of information with strings and numbers, appends that data to our table and calculates monthly salary expenses. It update the Total Monthly field with red background color when the monthly salary exceeds 20,000. It also has a delete function to remove a row of data. 
 
 ## Checklist (note, delete before turning in, commit with each step)
 

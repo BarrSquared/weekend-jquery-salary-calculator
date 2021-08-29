@@ -8,12 +8,13 @@ function readyNow(){
     //call to check salary
     $('.submit').on('function', salaryWarning);
     $('.delete-button').on('click', deleteRow);
-
 } // end readyNow function
 
 function deleteRow(){
-    $(this).parent();
+    let tableRow =$(this).parent();
+    console.log($(this));
     console.log('in delete row');
+    tableRow.removeClass('.delete-button');
 }
 
 function salaryWarning(){
@@ -52,4 +53,13 @@ function submit(){
 
     console.log('in submit button, test input', firstName);
 }// end submit function
+
+//take whole delete button call function
+//in ready now, reference somthing that starts loading on the page
+//$('parent of delete button').on('click', 'id or class for delete', function)
+//      'table'
+
+// $('table').on('click', 'delete-button', removeClass('delete-button'));
+
+// toFixed();
 

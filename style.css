@@ -10,9 +10,10 @@ th {
     background-color: rgb(158, 158, 158)
 }
 
-bRowAndTotal {
+.bRowAndTotal {
     width: 200;
     display:flex;
+    background-color: violet;
 }
 
 .bottomRow {
@@ -28,7 +29,8 @@ h1 {
     background-color: rgb(158, 158, 158)
 }
 
-addEmployeeField {
+.addEmployeeField {
+    background-color: violet;
     width: 600px;
 }
 
