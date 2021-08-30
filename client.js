@@ -6,16 +6,15 @@ function readyNow(){
     // $('#employeeTable').empty();
     $('#submit-button').on('click', submit);
     //call to check salary
-    // $('.submit').on('', salaryWarning);
-    $('.submit')
-    $('.delete-button').on('click', deleteRow);
+    $('#employeeTable').on('click', '.delete-button', deleteRow);
+    // $('#delete-button').on('click', deleteRow);
 } // end readyNow function
 
 function deleteRow(){
-    let tableRow =$(this).parent();
-    console.log($(this));
+    let tableRow = $(this).parent().parent();
+    console.log('what is this', $(this).parent().parent());
     console.log('in delete row');
-    tableRow.removeClass('.delete-button');
+    tableRow.remove();
 }
 
 
@@ -29,7 +28,7 @@ function submit(){
     let monthlySalary = annualSalary / 12;
     //now to append to the dom
     $('#employeeTable').append(`
-    <tr>
+    <tr class="tableRow">
         <td>${firstName}</td>
         <td>${lastName}</td>
         <td>${id}</td>
@@ -59,5 +58,4 @@ function submit(){
 
 // $('table').on('click', 'delete-button', removeClass('delete-button'));
 
-// toFixed();
 

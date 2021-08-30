@@ -14,7 +14,7 @@ This project is a an employee salary calculator. It takes in 5 fiels of informat
 - [X] Append to the DOM using those variables
 - [X] Create global variables for monthly cost
 - [X] Append monthly cost to the DOM
-- [ ] Logic for background color on the monthly costs
+- [X] Logic for background color on the monthly costs
 - [ ] Delete button that removes a row 
 
 
