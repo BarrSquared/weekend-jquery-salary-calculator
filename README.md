@@ -8,14 +8,14 @@ This project is a an employee salary calculator. It takes in 5 fiels of informat
 
 - [X] HTML, client.js, jquery.js, test log for jquery "DOM ready"
 - [X] Build a template in HTML (inputs / table)
-- [ ] Add style to the table
+- [X] Add style to the table
 - [X] Button click that logs to the console.
 - [X] Assign input to variables
 - [X] Append to the DOM using those variables
 - [X] Create global variables for monthly cost
 - [X] Append monthly cost to the DOM
 - [X] Logic for background color on the monthly costs
-- [ ] Delete button that removes a row 
+- [X] Delete button that removes a row 
 
 
 ### Stretch

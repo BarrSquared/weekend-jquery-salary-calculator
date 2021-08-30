@@ -12,8 +12,8 @@ function readyNow(){
 
 function deleteRow(){
     let tableRow = $(this).parent().parent();
-    console.log('what is this', $(this).parent().parent());
-    console.log('in delete row');
+    // console.log('what is this', $(this).parent().parent());
+    // console.log('in delete row');
     tableRow.remove();
 }
 
@@ -51,11 +51,5 @@ function submit(){
     console.log('in submit button, test input', firstName);
 }// end submit function
 
-//take whole delete button call function
-//in ready now, reference somthing that starts loading on the page
-//$('parent of delete button').on('click', 'id or class for delete', function)
-//      'table'
-
-// $('table').on('click', 'delete-button', removeClass('delete-button'));
 
 
